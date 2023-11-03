@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 class Node<T> {
     T val;
     Node<T> next;
@@ -10,7 +12,15 @@ class Node<T> {
   
   class Source {
     public static <T> boolean linkedListFind(Node<T> head, T target) {
-      // todo
+      Node<T> currNode = head;
+
+      while(currNode != null){
+        if(currNode.val.equals(target)){
+          return true;
+        }
+      }
+      //LinkedList<Integer> currNode = new LinkedList<>();
+      
       return false;
     }
     

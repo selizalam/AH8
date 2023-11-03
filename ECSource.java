@@ -11,8 +11,16 @@ class Node<T> {
 class ECSource {
   public static <T> T getNodeValue(Node<T> head, int index) {
     // todo - note the return type, but don't overthink it
-    return;
-  }
+    Node<T> currNode = head;
+      if(currNode != null){
+        System.out.println("The value at index " + index + " is: ");
+      }  
+    else{
+        return null;
+      }
+      //LinkedList<Integer> currNode = new LinkedList<>();
+      return currNode.val;
+    }
   
   public static void main(String[] args) {
     Node<String> node1 = new Node<>("banana");
